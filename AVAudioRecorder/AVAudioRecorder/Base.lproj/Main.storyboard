@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lyjbjt" translatesAutoresizingMaskIntoConstraints="NO" id="Dch-4E-bNG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-IV-PYg">
+                                <rect key="frame" x="20" y="200" width="280" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESK-90-D7p">
+                                <rect key="frame" x="24" y="470" width="52" height="52"/>
+                                <state key="normal" image="lyj_lyan"/>
+                                <connections>
+                                    <action selector="recordClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHU-xR-tbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onx-ve-x4h">
+                                <rect key="frame" x="102" y="470" width="52" height="52"/>
+                                <state key="normal" image="lyj_atan"/>
+                                <connections>
+                                    <action selector="pauseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Os-d1-qqs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMg-Gb-MaK">
+                                <rect key="frame" x="172" y="470" width="52" height="52"/>
+                                <state key="normal" image="lyj_bfq_bfan"/>
+                                <connections>
+                                    <action selector="resumeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igB-s1-bTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-b5-L4r">
+                                <rect key="frame" x="245" y="470" width="52" height="52"/>
+                                <state key="normal" image="lyj_tian"/>
+                                <connections>
+                                    <action selector="stopClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21Q-H0-SJi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="audioPower" destination="bUF-IV-PYg" id="wND-TV-UZt"/>
+                        <outlet property="pause" destination="onx-ve-x4h" id="cdr-u4-dHa"/>
+                        <outlet property="record" destination="ESK-90-D7p" id="eAC-WW-J9h"/>
+                        <outlet property="resume" destination="xMg-Gb-MaK" id="HLC-rh-ZHE"/>
+                        <outlet property="stop" destination="Dhz-b5-L4r" id="uoD-n6-DaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lyj_atan" width="52" height="52"/>
+        <image name="lyj_bfq_bfan" width="52" height="52"/>
+        <image name="lyj_lyan" width="52" height="52"/>
+        <image name="lyj_tian" width="52" height="52"/>
+        <image name="lyjbjt" width="320" height="480"/>
+    </resources>
+</document>
